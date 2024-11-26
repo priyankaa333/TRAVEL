@@ -1,0 +1,130 @@
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://cdn.pixabay.com/photo/2022/08/17/20/42/hot-air-balloon-7393437_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.abot{
+    margin-top: 200px;
+    margin-left: 74px;
+    height: 700%;
+    width: 90%;
+    background: transparent;   
+    position: relative;
+}
+.a{
+    width: 100%;
+    height: 100vh;
+}
+.a .a-title{
+  text-align: center;
+  justify-content: center;
+  padding-top: 10%;
+  font-size: 150px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.a-first{
+    width: 100%;
+    height: auto;
+    background: #0405002f;
+}
+.a-second{
+    width: 100%;
+    height: auto;
+    background: #0405002f;
+    margin-top: 80px;
+}
+
+.a-third{
+    width: 100%;
+    height: auto;
+    background: #0405002f;
+    margin-top: 80px;
+}
+.a-third h1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 50px;
+}
+.a-four{
+    width: 100%;
+    height: auto;
+    background: #0405002f;
+    padding: 50px;
+    margin-top: 80px;
+}
+@media (max-width:1025px){
+    .a .a-title{
+        font-size: 150px;
+        padding-top: 0px;
+    }
+    main .abot {
+        top: 150px;
+        width: 90%;
+        margin-left: 52px;
+    }
+}
+
+
+@media (max-width:968px){
+    .a .a-title{
+        font-size: 120px;
+        padding-top: 280px;
+    }
+    main .abot{
+        margin-left: 45px;
+    }
+    .a{
+        height: 50vh;
+    }
+}
+
+@media (max-width:768px){
+    main .abot {
+        top: 150px;
+        width: 90%;
+        margin-left: 38px;
+      }
+    .a .a-title{
+        font-size: 120px;
+        padding-top: 300px;
+    }
+    .a-third h1{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 546px) {
+    main .abot {
+      margin-left: 20px;
+    }
+    .a .a-title{
+        padding-top: 0px;
+        font-size: 100px;
+    }
+    .a-first{
+        margin-top: -200px;
+    }
+    .a{
+        height: 100vh;
+    }
+}
+@media (max-width:375px){
+
+    .a {
+        padding-top: 0px;
+    }  
+   .a-third h1{
+    font-size: 3rem;
+   }
+}

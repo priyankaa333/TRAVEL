@@ -1,0 +1,134 @@
+.Nav_wrapper{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    box-shadow: 0 0 30px rgba(30, 30, 30, 0.18);
+    z-index: 999;
+    background: rgba(2, 2, 2, 0.616);
+}
+
+.Nav_wrapper .logo a{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 800;
+}
+.Nav_wrapper ul li a{
+    color: #fff;
+    font-weight: 800;
+}
+
+.Nav_wrapper ul li a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.Nav_wrapper ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav_btns{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav_btns .shopig_user  p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.nav_btns  .shopig_user{
+    width: 200px;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.nav_btns  .shopig_user i{
+    font-size: 25px;
+    color: #fff;
+}
+
+#bars{
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1.2s;
+    display: none;
+}
+
+#bars:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width:996px){
+    #bars{
+        display: block;
+    }
+    .Nav_wrapper ul{
+        position: absolute;
+        top: 125%;
+        left: 0;
+        width: 0%;
+        background-color: rgba(2, 2, 2, 0.63);
+        transition: 0.6s;
+        border-color: #1e1e1e;
+        border-style: solid;
+        border-width: 0px;
+        overflow: hidden;
+        border-radius: 12px;
+
+    }
+    .Nav_wrapper ul li{
+        display: block;
+        margin: 15px 0;
+        padding: 8px 0;
+        padding-left: 8% !important;
+    }
+
+    .Nav_wrapper .activeMenu{
+        border-width: 1px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:756px){
+
+    .Nav_wrapper{
+        display: flex;
+        padding: 20px;
+    }
+    .nav_btns  .shopig_user{
+        display: none;
+    }
+
+}
+@media screen and (max-width:560px){
+
+    .nav_btns  .shopig_user{
+        width: 20px;
+    }
+
+    
+
+}
+
+
+

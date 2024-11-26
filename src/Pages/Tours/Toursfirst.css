@@ -1,0 +1,116 @@
+
+
+.tfirst {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+.cardd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.cardd {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardd img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cardd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardd-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+}
+
+
+.cardd-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.cardd-content p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+
+@media (max-width: 996px){
+  .tabs button {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  .tabs{
+    gap: 0px;
+  }
+}
+
+@media (max-width: 526px){
+  .tabs button {
+    font-size: .8rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .tfirst {
+    padding: 20px;
+  }
+}
+
+

@@ -1,0 +1,155 @@
+.Memories_Wrapper{
+    display: grid !important;
+    grid-template-columns: repeat(6,1fr) !important;
+    grid-template-areas: 
+
+    "Grid-card-1 Grid-card-1 Grid-card-2 Grid-card-2 Grid-card-4 Grid-card-4"
+    "Grid-card-1 Grid-card-1 Grid-card-3 Grid-card-3 Grid-card-4 Grid-card-4"
+    "Grid-card-7 Grid-card-7 Grid-card-6 Grid-card-6 Grid-card-4 Grid-card-4"
+    "Grid-card-7 Grid-card-7 Grid-card-6 Grid-card-6 Grid-card-5 Grid-card-5"
+    ;
+    gap: 0 !important;
+    margin-top: 100px;
+}
+
+.Memories_Wrapper .MemoriesCard{
+    width: auto;
+    height: 280px;
+    margin: 20px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.Memories_Wrapper .MemoriesCard::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.6s;
+}
+.Memories_Wrapper .MemoriesCard:hover:after{
+    opacity: 1;
+}
+.Memories_Wrapper .MemoriesCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.6s;
+}
+.Memories_Wrapper .MemoriesCard:hover img{
+    filter: grayscale(40%) blur(2px);
+    transform: scale(1.1);
+}
+.Memories_Wrapper .MemoriesCard .content{
+    position: absolute;
+    top: -80%;
+    left: 25px;
+    transition: 0.6s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    z-index: 9;
+}
+.Memories_Wrapper .MemoriesCard .content h3{
+    font-size: 28px;
+    color: #fff;
+}
+
+.Memories_Wrapper .MemoriesCard .content a{
+    color: #fff;
+}
+.Memories_Wrapper .MemoriesCard .content button{
+    padding: 10px 20px;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.Memories_Wrapper .MemoriesCard:hover .content{
+    top: 0%;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(1){
+    height: auto;
+    grid-area: Grid-card-1;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(2){
+    height: 250px;
+    grid-area: Grid-card-2;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(3){
+    height: 250px;
+    grid-area: Grid-card-3;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(4){
+    height: 550px;
+    grid-area: Grid-card-4;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(5){
+    grid-area: Grid-card-5;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(6){
+    grid-area: Grid-card-6;
+}
+.Memories_Wrapper .MemoriesCard:nth-child(7){
+    grid-area: Grid-card-7;
+}
+
+
+
+@media screen and(max-width:1200px){
+    .Memories_Wrapper .MemoriesCard .content h3{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .Memories_Wrapper{
+        grid-template-columns: repeat(2,1fr) !important;
+        grid-template-areas: 
+    
+        "Grid-card-1 Grid-card-1 "
+        "Grid-card-2 Grid-card-2 "
+        "Grid-card-3 Grid-card-3 "
+        "Grid-card-4 Grid-card-4 "
+        "Grid-card-5 Grid-card-5 "
+        "Grid-card-6 Grid-card-6 "
+        "Grid-card-7 Grid-card-7 "
+        ;
+        
+    }
+    .Memories_Wrapper .MemoriesCard{
+        width: 95%;
+        height: 400px !important;
+    }
+}
+
+@media screen and (max-width:746px){
+    .Memories_Wrapper{
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width:546px){
+    .Memories_Wrapper .MemoriesCard{
+        width: 90%;
+    }
+
+}
+@media (max-width: 480px){
+    .Memories_Wrapper{
+        margin-top: 10px;
+    }
+}

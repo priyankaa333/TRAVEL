@@ -1,0 +1,41 @@
+.outer-container{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    color: #fff;
+    line-height: 2;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.button{
+  padding: 10px 30px;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

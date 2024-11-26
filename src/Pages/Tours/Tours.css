@@ -1,0 +1,142 @@
+.tours{
+    width: 90%;
+    height: 700%;    
+    margin-top: 200px;
+    margin-left: 75px;
+    position: relative;
+    background: transparent;
+
+}
+.bgi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/2609463/pexels-photo-2609463.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.tours-heading{
+    width: 100%;
+    height: 100vh;
+   
+}
+.tours-heading .tours-title{
+  text-align: center;
+  justify-content: center;
+  padding-top: 20%;
+  font-size: 150px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.t-first{
+    width: 100%;
+    height: auto;
+    background: #0405004e;
+ }
+.t-second{
+    width: 100%;
+    height: auto;
+    background: #0405004e;
+    padding: 50px;
+    margin-top: 80px;
+}
+.t-third{
+    width: 100%;
+    height: auto;
+    background: #0405004e;
+    margin-top: 80px;
+}
+.t-four{
+    width: 100%;
+    height: auto;
+    background: #0405004e;
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+}
+.t-four h1{
+    font-size: 5rem;
+    color: #fff;
+}
+.t-four a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.t-five{
+    width: 100%;
+    height: auto;
+    background: #0405004e;
+    margin-top: 80px;
+    padding: 50px;
+}
+@media (max-width:1280px){
+    .tours{
+        margin-left: 64px; 
+    }
+}
+
+@media (max-width:1025px) {
+    .tours-heading .tours-title{
+        font-size: 150px;
+        padding-top: 250px;
+    }
+    .tours{
+        margin-left: 48px; 
+    }
+}
+
+
+@media (max-width:996px) {
+    .tours-heading .tours-title{
+        font-size: 200px;
+        padding-top: 500px;
+    }
+    .tours{
+        margin-left: 40px; 
+    }
+
+}
+
+@media (max-width:768px) {
+    .tours-heading .tours-title{
+        font-size: 100px;
+        padding-top: 300px;
+    }
+    .tours{
+        margin-left: 37px; 
+    }
+}
+@media (max-width:540px){
+    .tours{
+        margin-left: 26px; 
+    }
+}
+@media (max-width:476px){
+    .t-four h1{
+       font-size: 3.5rem;
+    }
+    .t-four{
+        padding: 10px;
+    }
+    .tours{
+        margin-left: 19px; 
+    }
+
+}
+@media (max-width:360px){
+    .t-four{
+        padding: 10px;
+    }
+    .t-four h1{
+        padding: 10px;
+        font-size: 3rem;
+    }
+
+}
+

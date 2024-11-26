@@ -1,0 +1,43 @@
+.four-wraper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    
+}
+
+.four-wraper .wrapers{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.four-wraper .wrapers img{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.four-wraper .wrapers img:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+
+
+
+@media (max-width:560px){
+    .four-wraper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+    }
+}
+
+
+
+
+

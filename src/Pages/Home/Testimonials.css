@@ -1,0 +1,140 @@
+.testimonials {
+  width: 100%;
+  height: auto;
+  background-image: 
+    url("https://cdn.pixabay.com/photo/2020/03/03/20/31/boat-4899802_1280.jpg"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.testimonial-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.testimonial-card {
+  background: #65a4af7e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px 30px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.testimonial-card:hover{
+  background: #389a9abd;
+  transform: scale(1.03);
+}
+.stars {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.testimonial-feedback {
+  font-style: italic; 
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.testimonial-role {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .testimonial-heading {
+    font-size: 3rem;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px; 
+    max-width: 90%; 
+    height: 300px;
+    font-size: 2rem;
+  }
+
+  .testimonial-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .testimonial-name {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-role {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-name {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 300px;
+    height: 250px;
+    margin-left: -46px;
+
+    
+  }
+}
+
+

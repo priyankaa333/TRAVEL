@@ -1,0 +1,138 @@
+.testimoni {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.testimoni-heading {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 3px rgb(74, 66, 66);
+}
+
+.testimoni-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimoni-card {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 80px 30px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.testimoni-car {
+  background: #000b0f52;
+  color: #fff;
+  border-radius: 10px;
+  padding: 80px 30px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.testimoni-car:hover{
+  background: #fff;
+  transform: scale(1.03);
+  color: #000b0f52;
+}
+.testimoni-card:hover{
+  background: #000b0f52;
+  transform: scale(1.03);
+  color: #fff;
+}
+.star i{
+  background: #4c53541d;
+  padding: 10px 20px;
+  font-size: 50px;
+  border-radius: 50%;
+}
+
+
+.testimoni-car .testimoni-feedback {
+  font-style: italic;
+  color: #000;
+}
+.testimoni-feedback {
+  font-style: italic;
+  color: #000;
+}
+
+.testimoni-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimoni-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.testimoni-name {
+  font-weight: bold;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimoni-role {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+
+
+@media (max-width:854px){
+  .testimoni-container {
+    margin: auto;
+  }
+}
+
+
+@media (max-width:821px) {
+  .testimoni-container {
+    margin: auto;
+  }
+  .testimoni-heading{
+    font-size: 3.5rem;
+  }
+}
+@media (max-width:499px) {
+  .testimoni-container {
+    margin: 0;padding: 0;
+  }
+  .testimoni-heading{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:376px) {
+
+  .testimoni-heading{
+    font-size: 3rem;
+    width: 200px;
+    margin-left: -40px;
+  }
+
+}
+
+
+
+
+
+
+
+
