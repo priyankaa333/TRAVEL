@@ -12,9 +12,9 @@ import FourSlides from './FourSlides';
 import Conect from './Conect';
 import Footer from '../../Components/Footer/Footer';
 const images = [
-    'https://images.pexels.com/photos/1450359/pexels-photo-1450359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 
-    'https://www.getout.pk/maldives/wp-content/uploads/2022/04/Rihiveli-Maldives-Resort-1024x682.jpg',
-    'https://th.bing.com/th/id/R.fa8ffac308895e42022436b93a70dd2e?rik=KVOB%2bGlTGUzWIg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-Qa6MzjnPeLM%2fURoF8H-APhI%2fAAAAAAAAApQ%2fELjMyu78v8Q%2fs1600%2fMaldives-Resorts.jpg&ehk=yrBin1%2bAnfMEU1Bu3RonckFr75AqO1%2fi60A1m60qBQs%3d&risl=&pid=ImgRaw&r=0',
+    'https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg', 
+    'https://cdn.pixabay.com/photo/2022/05/11/13/55/nature-7189418_1280.jpg',
+    'https://images.pexels.com/photos/2155749/pexels-photo-2155749.jpeg',
   ];
 
 const Home = () => {
